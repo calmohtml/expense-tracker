@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <script type="module" crossorigin src="assets/index.19316ffd.js"></script>
+    <link rel="stylesheet" href="assets/index.bce48775.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Expense Tracker</h1>
+      <form action="" id="form">
+        <div class="form__item quantity">
+          <label for="quantity">$</label>
+          <input
+            type="number"
+            name="quantity"
+            placeholder="Insert a Income/Expense..."
+          />
+        </div>
+        <div class="form__item typeOf">
+          <label for="typeOfQuantity">Type</label>
+          <select name="typeOfQuantity" id="">
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+          </select>
+        </div>
+        <div class="form__item description">
+          <label for="description">Description</label>
+          <select name="description" id="">
+            <option value="bars">Bars</option>
+            <option value="beauty">Beauty</option>
+            <option value="car">Car</option>
+            <option value="children">Children</option>
+            <option value="clothes">Clothes</option>
+            <option value="delivery">Delivery</option>
+            <option value="donations">Donations</option>
+            <option value="education">Education</option>
+            <option value="family">Family</option>
+            <option value="gaming">Gaming</option>
+            <option value="hobbies">Hobbies</option>
+            <option value="home">Home</option>
+            <option value="personalCare">Personal care</option>
+            <option value="restaurant">Restaurant</option>
+            <option value="services">Services</option>
+            <option value="shoppingMall">Shopping Mall</option>
+            <option value="sillyStuff">Silly stuff</option>
+            <option value="sports">Sports</option>
+            <option value="subscriptions">Subscriptions</option>
+            <option value="supermarket">Supermarket</option>
+            <option value="technology">Technology</option>
+            <option value="transport">Transport</option>
+            <option value="travels">Travels</option>
+            <option value="work">Work</option>
+            <option value="others">Others</option>
+          </select>
+        </div>
+        <button>Send</button>
+      </form>
+      <section class="balance">
+        <div id="totalIncome">
+          <h2>Income</h2>
+          <ul></ul>
+        </div>
+        <div id="totalExpense">
+          <h2>Expenses</h2>
+          <ul></ul>
+        </div>
+      </section>
+      <div id="balanceTotal"></div>
+    </main>
+  </body>
+</html>
