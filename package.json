@@ -1,11 +1,14 @@
 {
   "version": "0.0.0",
+  "description": "Expense tracker with Vanilla JavaScript, Sass and Vite as a bundler.",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "sass": "^1.35.2",
     "vite": "^2.4.2"
   }
