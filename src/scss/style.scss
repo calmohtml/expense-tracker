@@ -1,0 +1,198 @@
+@import "./variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0 auto;
+  width: 90%;
+  background-color: $color4;
+
+  .container {
+    font-family: $font;
+    color: $color1;
+
+    h1 {
+      font: {
+        weight: 600;
+        size: 2.8rem;
+      }
+      text-align: center;
+      margin: 1rem 0;
+    }
+
+    #form {
+      .form__item {
+        display: flex;
+        font-size: 2rem;
+        margin: 1rem 0;
+      }
+
+      .quantity {
+        justify-content: space-around;
+        font-size: 2.5rem;
+
+        input {
+          border: 0.2rem solid $color1;
+          background-color: $color2;
+          box-shadow: 0.6rem 0.6rem $color3;
+        }
+      }
+
+      .typeOf,
+      .description {
+        flex-direction: column;
+
+        label {
+          margin: 0.4rem 0;
+        }
+
+        select {
+          border: 0.2rem solid $color1;
+          background-color: $color2;
+          box-shadow: 0.6rem 0.6rem $color3;
+        }
+      }
+
+      button {
+        border: 0.2rem solid $color1;
+        background-color: $color2;
+        box-shadow: 0.6rem 0.6rem $color3;
+      }
+    }
+
+    .balance {
+      display: grid;
+      justify-items: center;
+      grid-template-columns: 1fr 1fr;
+      margin: 2rem 0;
+      box-shadow: 7px 7px $color3;
+      padding: 0.8rem 0;
+
+      h2 {
+        font-size: 2.3rem;
+      }
+
+      ul {
+        li {
+          font-weight: 200;
+          list-style: none;
+          color: $color2;
+          text-align: center;
+
+          h3 {
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+  }
+
+  #balanceTotal {
+    text-align: center;
+    margin: 1rem 0;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  #form {
+    padding: 0 3.5rem;
+
+    .quantity {
+      label {
+        font-size: 4rem;
+      }
+    }
+
+    .typeOf,
+    .description {
+      label {
+        font-size: 2rem;
+      }
+
+      select {
+        padding: 0.5rem 0;
+      }
+    }
+
+    button {
+      padding: 0.5rem 1rem;
+    }
+  }
+
+  #balanceTotal {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+  #form {
+    padding: 0 12rem;
+
+    .quantity {
+      label {
+        font-size: 3rem;
+      }
+    }
+
+    .typeOf,
+    .description {
+      label {
+        font-size: 2.8rem;
+      }
+
+      select {
+        padding: 1.3rem 0;
+      }
+    }
+
+    button {
+      padding: 1rem 2rem;
+    }
+  }
+
+  #balanceTotal {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1920px) {
+  #form {
+    padding: 0 19rem;
+
+    .quantity {
+      label {
+        font-size: 3.2rem;
+      }
+      input {
+        width: 40rem;
+      }
+    }
+
+    .typeOf,
+    .description {
+      label {
+        font-size: 3rem;
+      }
+
+      select {
+        padding: 1.7rem 0;
+      }
+    }
+
+    button {
+      padding: 1.3rem 2.3rem;
+    }
+  }
+
+  #balanceTotal {
+    font-size: 2.5rem;
+  }
+}
